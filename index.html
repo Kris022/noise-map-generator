@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Generator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app"></div>
+
+
+    <div id="container">
+      <canvas id="noiseMap" width="100" height="100"></canvas>
+
+      <input type="range" min="0.001" max="100" value="50" class="slider" id="scaleSlider">
+      <button id="btn" type="button" name="button">Generate</button>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/components/noiseScript.js"></script>
+  </body>
+</html>
