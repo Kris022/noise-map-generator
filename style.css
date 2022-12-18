@@ -22,3 +22,15 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+.noiseOptionsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  color: lightGray;
+}
+
+.noiseOptionsContainer input {
+  background-color: gray;
+  color: lightGray;
+}

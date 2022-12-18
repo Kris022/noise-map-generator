@@ -14,8 +14,22 @@
     <div id="container">
       <canvas id="noiseMap" width="100" height="100"></canvas>
 
-      <input type="range" min="0.001" max="100" value="50" class="slider" id="scaleSlider">
+      <div class="noiseOptionsContainer">
+        <label for="">Scale</label>
+        <input type="number" min="0.001" max="100" value="27" class="slider" id="scaleSlider">
+
+        <label for="">octaves</label>
+        <input type="number" min="0.001" max="10" value="4" class="slider" id="octavesSlider">
+
+        <label for="">presistance</label>
+        <input type="number" min="0.001" max="0.5" value="0.5" class="slider" id="presistanceSlider">
+
+        <label for="">lacunarity</label>
+        <input type="number" min="0.001" max="3" value="1.87" class="slider" id="lacunaritySlider">
+      </div>
+
       <button id="btn" type="button" name="button">Generate</button>
+
     </div>
 
     <script type="module" src="/main.js"></script>

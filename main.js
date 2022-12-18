@@ -18,15 +18,18 @@ let noiseMap = new NoiseScript().generateNoiseMap(canvas.width, canvas.height, s
 let colorMap = new MapGenerator(canvas.width, canvas.height, ctx, noiseMap);
 colorMap.drawNoise();
 
-
-
-
 const button = document.getElementById('btn');
 const scaleSlider = document.getElementById("scaleSlider");
+const octavesSlider = document.getElementById("octavesSlider");
+const presistanceSlider = document.getElementById("presistanceSlider");
+const lacunaritySlider = document.getElementById("lacunaritySlider");
 
 button.addEventListener('click', function handleClick() {
-  console.log(scaleSlider.value);
   scale = scaleSlider.value;
+  octaves = octavesSlider.value;
+  presistance = presistanceSlider.value;
+  lacunarity = lacunaritySlider.value;
+  console.log(lacunarity);
 
   let noiseMap = new NoiseScript().generateNoiseMap(canvas.width, canvas.height, scale, octaves, presistance, lacunarity);
   let colorMap = new MapGenerator(canvas.width, canvas.height, ctx, noiseMap);
