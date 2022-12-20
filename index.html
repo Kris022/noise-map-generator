@@ -26,6 +26,14 @@
 
         <label for="">lacunarity</label>
         <input type="number" min="0.001" max="3" value="1.87" class="slider" id="lacunaritySlider">
+
+        <label for="">seed</label>
+        <input type="number" value="100" class="slider" id="seedSlider">
+
+        <label for="">offset x</label>
+        <input type="number" value="0" class="slider" id="offsetXSlider">
+        <label for="">offset y</label>
+        <input type="number" value="0" class="slider" id="offsetYSlider">
       </div>
 
       <button id="btn" type="button" name="button">Generate</button>
@@ -33,6 +41,7 @@
     </div>
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="components/utils.js"></script>
     <script type="module" src="/components/noiseScript.js"></script>
   </body>
 </html>
